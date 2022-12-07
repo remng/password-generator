@@ -1,0 +1,194 @@
+form {
+  background-color: rgb(213, 31, 99);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  max-width: 500px;
+  height: 100%;
+  margin: 1em auto;
+  border-bottom: 10px solid #27adee;
+}
+
+.container-senha {
+  background-color: rgb(213, 31, 99);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  max-width: 500px;
+  height: 100%;
+  margin: 1em auto;
+  border-top: 10px solid #27adee;
+}
+
+.container-senha>input[type="text"] {
+  font-size: 22px;
+  outline: none;
+  margin-bottom: .5em;
+  margin-top: .5em;
+  margin-left: 0.5em;
+  width: 89%;
+  background-color: #eee;
+  border-radius: 2px;
+  border: none;
+  padding: 0.1em;
+  text-align: center;
+}
+
+svg {
+  cursor: pointer;
+  font-size: 2em;
+  color: #eee;
+  position: relative;
+  top: 6px;
+}
+
+svg:hover {
+  color: #27adee;
+}
+
+svg:active {
+  color: #27adee;
+  font-size: 2.2em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-2 {
+  width: 50%;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: .5em;
+  margin-top: 0;
+}
+
+h1 {
+  padding-top: 0.5em;
+  text-align: center;
+  color: #fff;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: #27adee;
+  height: 5px;
+  border-radius: 5px;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #27adee;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background: #27adee;
+  cursor: pointer;
+}
+
+.container-2>input[type="text"] {
+  font-size: 22px;
+  outline: none;
+  margin-bottom: .5em;
+  margin-left: 0.5em;
+  max-width: 50px;
+  background-color: #eee;
+  border-radius: 2px;
+  border: none;
+  padding: 0.1em;
+}
+
+input[type="submit"] {
+  font-size: 22px;
+  width: 90%;
+  margin-top: .5em;
+  margin-bottom: 1em;
+  height: 60px;
+  background-color: #27adee;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5em;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1e9ddd;
+  color: #f3f3f3;
+}
+
+.container-label {
+  display: block;
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  color: #fff;
+}
+
+/* Esconder o checkbox padrão */
+.container-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Criar o checkbox customizado */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0.5em;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+/* Adicionar uma cor de fundo cinza ao passar o mouse */
+.container-label:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* Quando o checkbox é clicado, adicionar um fundo rosa */
+.container-label input:checked~.checkmark {
+  background-color: #27adee;
+}
+
+/* Criar o ícone de check, escondido quando não estiver selecionado */
+.container-label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Exibir o ícone quando selecionado */
+.container-label input:checked~.checkmark:after {
+  display: block;
+}

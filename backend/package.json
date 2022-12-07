@@ -1,0 +1,24 @@
+{
+  "name": "gerador-loteria",
+  "version": "1.0.0",
+  "description": "Gerador de número para loterias",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js localhost 5001",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "loteria",
+    "megasena",
+    "quina",
+    "node",
+    "js"
+  ],
+  "author": "Renato Garcia <renatomngarcia@gmail.com> (https://github.com/remng)",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
